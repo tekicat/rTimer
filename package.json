@@ -1,0 +1,25 @@
+{
+  "name": "rTimer",
+  "version": "1.0.0",
+  "description": "Print Timetaken to send realtime message.",
+  "main": "sender.js",
+  "repository": "https://github.com/tekicat/rTimer.git",
+  "author": "Tekicat",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "sender": "node rTimer.js sender",
+    "receiver": "nodemon -q rTimer.js receiver"
+  },
+  "dependencies": {
+    "ably": "^1.2.15",
+    "uuid": "^8.3.2",
+    "microtime": "^3.0.0",
+    "mathjs": "^10.0.2",
+    "yargs": "^17.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
